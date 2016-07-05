@@ -1,0 +1,103 @@
+@import "../../styles/reset.css";
+.header{
+    width:100%;
+    border:1px solid #33b7e8;
+    max-width: 640px;
+    background:#33b7e8;
+}
+.header .header_text{
+    text-align: center;
+    margin:5.53em 0;
+    overflow: hidden;
+}
+.header .header_text p{
+    font-size: 2em;
+    color:#fff;
+    font-weight: normal;
+}
+.header .header_text h4{
+    font-size: 1.42em;
+    color:#fff;
+    font-weight: normal;
+    margin-top: 0.5em;
+}
+.content{
+    width: 100%;
+    max-width: 640px;
+    background: #33b7e8;
+    text-align: center;
+    overflow: hidden;
+}
+.content_img img{
+    width:19em;
+    margin-bottom: 8.5em;
+}
+.footer .footer_bottom{
+    width: 100%;
+    height: 6.8em;
+    position: fixed;
+    max-width: 640px;
+    bottom: 0;
+}
+.footer .footer_bottom h4{
+    width: 100%;
+    height: 4.8em;
+    background: #333;
+    position: fixed;
+    max-width: 640px;
+    bottom: 0;
+}
+.footer .footer_bottom img{
+    width:6.9em;
+    position: relative;
+    top: -2em;
+    float: left;
+    margin-left:1em
+}
+.footer .footer_bottom dl {
+    display: inline-block;
+    color: #fff;
+    margin-top: 2em;
+    text-align: left;
+    position: relative;
+    top:-0.7em;
+    margin-left:0.5em;
+}
+.footer .footer_bottom dl dd{
+    color: #fff;
+    font-size: 0.8em;
+    text-align: left;
+}
+.footer .footer_bottom dl dt{
+    color: #fff;
+    font-size: 1.3em;
+    text-align: left;
+}
+.footer .footer_bottom .footer_left button{
+    position: relative;
+    top: -3em;
+    margin-right:0.7em;
+    -webkit-border-radius:0.4em;
+    -moz-border-radius:0.4em;
+    border-radius:0.4em;
+    padding: 0.1em 1.2em;
+    border: 1px solid #fff;
+    color: #fff;
+    float: right;
+    font-size: 1.2em;
+    background:none;
+}
+.footer .footer_bottom .footer_right button{
+    position: relative;
+    top: -3em;
+    margin-right: 0.7em;
+    -webkit-border-radius:0.4em;
+    -moz-border-radius:0.4em;
+    border-radius:0.4em;
+    padding: 0.1em 1.2em;
+    border: 1px solid #fff;
+    color: #fff;
+    float: right;
+    font-size: 1.2em;
+    background:none;
+}

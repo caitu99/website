@@ -1,0 +1,92 @@
+@import "../../styles/reset.css";
+body {
+    /* margin: 0; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* position: absolute; */
+    /* left: 17%; */
+}
+
+.header{
+    width:100%;
+    max-width: 640px;
+    background:#fff;
+    margin: 0 auto;
+    /*border:1px solid red;*/
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+}
+.header a img{
+    width:3em;
+    position: absolute;
+    left:5%;
+    top:3em;
+}
+.header img{
+    width:6em;
+}
+.header p{
+    width:100%;
+    text-align: center;
+    font-size:1.42em;
+    padding-top: 1em;
+}
+.header h4{
+    width:100%;
+    text-align: center;
+    font-size:1.2em;
+    color:#d1d1d1;
+}
+.box{
+    background-color: #fff;
+    /*border: 1px solid red;*/
+    max-width: 640px;
+    margin: 0;
+    padding: 0 0;
+    overflow: hidden;
+}
+.box ul {
+    width: 100%;
+    margin:0 auto;
+}
+.box ul li{
+    width: 100%;
+    /*border: 1px solid red;*/
+    padding-left: 2em;
+    margin: 0.6em 0;
+    float: left;
+    text-align: center;
+}
+.box ul li img{
+    width:2.5em;
+    /*border:1px solid red;*/
+}
+.box ul li span{
+    /*border: 1px solid red;*/
+    display: inline-block;
+    width: 85%;
+    text-align: left;
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+.footer{
+    width:100%;
+    max-width: 640px;
+    background:#fff;
+    /*border:1px solid red;*/
+    text-align: center;
+  padding:1em;
+    margin:0 auto;
+
+    height:30em;
+
+}
+#bdmap{
+    /*width:100%;*/
+    /*border:1px solid red;*/
+    max-width: 640px;
+    border:1px solid #d4d4d5;
+    height:20em;
+    position:relative;
+}

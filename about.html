@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>财途积分钱包</title>
+	<link rel="stylesheet" type="text/css" href="app/css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="app/css/public.css">
+	<link rel="stylesheet" type="text/css" href="app/css/about.css">
+	<link href="app/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="app/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="app/images/header_img.ico" />
+	<link rel="bookmark" href="app/images/header_img.ico" type="image/x-icon"　/>
+	<script src="app/js/bootstrap.min.js"></script>
+	<script src="app/js/jquery-1.11.3.min.js"></script>
+	<script>
+	
+		var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+		var browser = navigator.userAgent.toLowerCase(); 
+		var isMobile = false; 
+		for (var i=0; i<mobileAgent.length; i++){ 
+			if ( browser.indexOf(mobileAgent[i])!=-1 ){ 
+				isMobile = true; 
+				//alert(mobileAgent[i]); 
+				location.href = 'app/app/index.html';
+				break; 
+			} 
+		} 
+
+	</script>
+</head>
+<body>
+	<div class="header_img" id="tab_bar">
+		<div class="header_left">
+			<img src="app/images/tubiao.png" alt=""/><span>财途</span>
+		</div>
+		<ul>
+			<li id="tab1"><a href="index.html">首页</a></li>
+			<li id="tab2"><a href="dt.html" class=" tab_left">公司动态</a></li>
+			<li id="tab3"><a href="information.html" class="tab_left">财途资讯</a></li>
+			<li id="tab4"><a href="about.html"  class="current ">关于我们</a></li>
+		</ul>
+		<div class="header_btn">
+			<div class="header_right" style="display:none;">
+				<img src="app/images/iconfont-pingguo.png" alt="" class="input_img"/><input type="button" value="测试版" class="input_bt"/>
+			</div>
+			<div class="header_right" id="btn_test1">
+				<img src="app/images/iconfont-pingguo.png" alt=""/><img src="app/images/iconfont-anzhuo.png" alt=""/><span>正式版</span>
+			</div>
+			<div id="btn_img1"  style="display: none"  >
+				<img src="app/images/zhengshiban.png" alt="">
+				<img src="app/images/erweima.png" alt="" class="two"/>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fullpage">
+	
+		
+		<div class="section" id="section0">
+		<div class="bg_box">
+				<input id="dt-download-btn" type="button" value="下载体验"/>
+			<div id="load_img" style="display: none">
+				<img src="app/images/top_img.png" alt="">
+			</div>
+				
+		<div id="cut" class="bg_top bg_top2" >
+
+			<ul  class="bg_ul" >
+				<li class="active">
+					<img src="app/images/iconfont-weishi.png" alt="" class="img1"/>
+					<div class="five_box"></div>
+				</li>
+				<li>
+					<img src="app/images/iconfont-tuandui.png" alt=""  class="img2"/>
+					<div class="five_box"></div>
+				</li>
+				<li>
+					<img src="app/images/iconfont-lianxiwomen-(1).png" alt=""  class="img3"/>
+					<div class="five_box"></div>
+				</li>
+			</ul>
+		</div>
+			</div>
+		</div>
+		
+		
+		<div class="section" id="section1">
+			
+					<div id="content_box">
+						<div class="weishi">
+							<div class="five_box"></div>
+							<div class="content_text">
+								<div  class="text_header">
+									<h3>关于财途</h3>
+									<p>  杭州未时网络技术有限公司（caitu99.com）成立于2015年3月，公司致力于为用户提供安全、便捷及全方位的互联网金融服务。公司核心成员曾就职于阿里、华为等知名企业，具有丰富的互联网从业和管理经验，对互联网金融认识深刻。</p>
+									<p>  财途积分生活是未时针对用户积分零散、价值低、使用难等问题提供的全方位解决方案，帮助用户快捷的管理和使用各种积分（银行、航空、酒店、餐馆、商场、超市等），用户可以轻松的通过积分进行优惠购物和享受各种便捷生活服务。</p>
+									<p>未来财途积分生活将不断完善拓展积分相关服务，积分价值最大化，让用户畅游积分生活！</p>
+								</div>
+
+							</div>
+						</div>
+						<div class="team" style="display: none">
+							<div class="five_box"></div>
+							<div class="content_team">
+								<div class="team_header">
+									<h3>我们的团队</h3>
+									<dl>
+										<dt><img src="app/images/boss1.png" alt=""></dt>
+										<dd>
+											<h2>陈勇文</h2>
+											<p>财途积分生活CEO</p>
+
+											5年阿里人，蚂蚁金服资深专家及授权讲师，快的打车 操盘手之一，全国出租车二维码地推及宁波智慧打车 城市打造负责人，深刻理解o2o业务落地与推广;
+										</dd>
+									</dl>
+									<dl>
+
+										<dt><img src="app/images/boss2.png" alt=""></dt>
+										<dd>
+											<h2>刘存显</h2>
+											<p>财途积分生活COO</p>
+											6年华为人，海外6年大项目管理经验，归国后加盟 51信用卡担任创新产品部总监同时兼任产品总监，懂 代码，金融，互联网，通信了解颇深;
+										</dd>
+									</dl>
+									<dl>
+
+										<dt><img src="app/images/boss3.png" alt=""></dt>
+										<dd>
+											<h2>陈云</h2>
+											<p>财途积分生活CMO</p>
+											创业老兵，征战多年，成功投资并管理创办了多家 企业，涉足IT信息化，软件，教育，物联网，金融 等多个行业领域，现重披创业战袍;
+										</dd>
+									</dl>
+
+								</div>
+							</div>
+						</div>
+						<div class="contact"  style="display: none">
+							<div class="five_box"></div>
+							<div class="content_bottom">
+								<div class="bottom_word">
+									<h3>联系我们</h3>
+									<ul>
+										<li><div id="bdmap"></div></li>
+										<li>
+											<p>地址：天目山路226号网新大厦3楼309室</p>
+											<p>合作电话：0571-86688230</p>
+											<p>客服电话：0571-86688230</p>
+											<p>招聘邮箱：hr@caitu99.com</p>
+											<p>合作邮箱：bd@cautu99.com</p>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+	</div>
+
+
+
+	<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+	<script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+	<script src="http://webapi.amap.com/maps?v=1.3&key=cf586916666ed9e59c0917e4a52663e9"></script>
+	<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+
+
+	<script type="text/javascript">
+		var map = new AMap.Map('bdmap', {
+			resizeEnable: true,
+			center : [120.127771,30.272294],
+			zoom:12
+		});
+
+		// 设置缩放级别和中心点
+		//map.setZoomAndCenter(14, [116.205467, 39.907761]);
+		// 在新中心点添加 marker
+		var marker = new AMap.Marker({
+			map: map,
+			position:map.getCenter(),
+		});
+		marker.setLabel({//label默认蓝框白底左上角显示，样式className为：amap-marker-label
+			offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+			content: "杭州未时网络技术有限公司"
+		});
+	</script>
+	
+	<script type="text/javascript" src="app/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="app/js/jquery.fullPage.min.js"></script>
+	<script>
+	$(function(){
+		$('#fullpage').fullpage({
+			sectionsColor: ['white', 'white'],
+			//anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+			//menu: '#menu',
+			fitToSection: false,
+			scrollingSpeed: 500,
+			'onLeave': function(index, nextIndex, direction){
+					if (index == 1 && direction == 'down'){
+						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+					}
+					else if(index == 2 && direction == 'up'){
+						$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+					}
+
+					$('#cut').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 2 && direction == 'up'));
+					$('#cut').toggleClass('moveDown', nextIndex == 2);
+					$('#cut').toggleClass('moveUp', index == 2 && direction == 'up');
+
+
+					if(index == 1 ) {
+						$.fn.fullpage.setAutoScrolling(false);
+						$('.header_img').css('background','rgb(51, 51, 51)');
+					}else {
+						$.fn.fullpage.setAutoScrolling(true);
+						$('.header_img').css('background','rgba(51, 51, 51, .7)');
+
+					}
+			}
+		});
+			
+		var $li = $('.bg_ul li');
+		var $content_box = $('#content_box > div');
+		$li.click(function(){
+			var $this = $(this);
+			var $t = $this.index();
+			$li.removeClass();
+			$this.addClass('active');
+			$content_box.css('display','none');
+			$content_box.eq($t).css('display','block');
+		});
+		$("#btn_test1").hover(function(){
+			$("#btn_img1").toggle();
+		})
+		$("#dt-download-btn").hover(function(){
+			$("#load_img").toggle();
+		})
+		
+	});
+</script>
+	</body>
+</html>

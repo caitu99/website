@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>联系我们</title>
+<script type="text/javascript" src="js/top.js"></script>
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+	<div class="header">
+		<img src="images/tubiao2.png" alt=""/>
+		<p>联系我们</p>
+		<h4>CONTACT US</h4>
+	</div>
+	<div class="box">
+		<ul>
+			<li><img src="images/dizhi.png" alt=""/>
+				<span>地址：浙江杭州西湖区天目山路226号310室</span>
+			</li>
+			<li><img src="images/dianhua.png" alt=""/>
+
+				<span>合作电话：0571-86688230</span>
+			</li>
+			<li><img src="images/zhaopin.png" alt=""/>
+
+				<span>招聘邮箱：hr@caitu99.com</span>
+			</li>
+			<li><img src="images/partner.png" alt=""/>
+
+				<span>合作邮箱：bd@caitu99.com</span>
+			</li>
+		</ul>
+	</div>
+	<div class="footer">
+		<div id="bdmap"></div>
+	</div>
+	<script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+	<script src="http://webapi.amap.com/maps?v=1.3&key=cf586916666ed9e59c0917e4a52663e9"></script>
+	<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+
+
+	<script type="text/javascript">
+		var map = new AMap.Map('bdmap', {
+			resizeEnable: true,
+			center : [120.127771,30.272294],
+			zoom:12
+		});
+
+		// 设置缩放级别和中心点
+		//map.setZoomAndCenter(14, [116.205467, 39.907761]);
+		// 在新中心点添加 marker
+		var marker = new AMap.Marker({
+			map: map,
+			position:map.getCenter(),
+		});
+		marker.setLabel({//label默认蓝框白底左上角显示，样式className为：amap-marker-label
+			offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+			content: "杭州未时网络技术有限公司"
+		});
+	</script>
+
+</body>
+</html>

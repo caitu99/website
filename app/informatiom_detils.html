@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>财途积分钱包</title>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/util.js"></script>
+		<script type="text/javascript" src="js/url.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<style>
+			.container{
+				max-width: 640px;
+				width:100%;
+				/*border:1px solid red;*/
+	
+				overflow: hidden;
+			}
+			.row{
+				margin-top:0em;
+			}
+			.col-lg-12 ,.col-md-12,.col-sm-12{
+				text-align: center;
+			}
+			.col-lg-12 ul{
+				overflow: hidden;
+				border-bottom: 1px solid #ebebeb;
+				padding: 0.6em 0;
+			}
+			.col-lg-12 ul .left_first{
+				margin-left: 0em;
+			}
+			.col-lg-12 ul li{
+				float:left;
+				/*border:1px solid red;*/
+				/*padding:0.5em;*/
+				margin-left: 2em;
+	
+	
+			}
+			.col-lg-12 ul li a{
+				text-decoration: none;
+			}
+			.col-lg-12 ul li .current{
+				color:#ec3e01;
+				border-bottom:2px solid #ec3e01;
+				padding:0.5em 0.5em;
+				/*text-decoration: none;*/
+			}
+			.col-lg-12 ul li a{
+				font-size: 1.2em;
+				color:#333;
+				font-family: "Microsoft YaHei", "微软雅黑";
+			}
+	
+			.margin_top{
+				margin-top:1em;
+			}
+			.col-lg-3 ,.col-md-3,.col-sm-3{
+				text-align: center;
+				/*border:1px solid red;*/
+			}
+			.img{
+				width:15em;
+				height:9em;
+				/*border:1px solid red;*/
+				background-image: url(../../app/images/zuxun1.jpg);
+				background-size: 100%;
+			}
+			.col-lg-8 ,.col-md-8,.col-sm-8{
+				text-align: left;
+				/*border:1px solid blue;*/
+			}
+			.text_list{
+				font-family: "Microsoft YaHei", "微软雅黑";
+				line-height: 1.25em;
+				padding-top:20px;
+				margin-left: -3em;
+			}.text_list h4{
+				 font-size: 1.2em;
+	
+			 }
+			.text_list b{
+				font-size: 1em;
+				color: #adadad;
+				display: inline-block;
+				margin-top: 0.25em;
+				margin-bottom: 0.5em;
+				font-weight: normal;
+			}
+			.text_list span{
+				margin-left: 2em;
+				color:#adadad;
+			}
+			.text_list p{
+				font-size: 0.9em;
+			}
+			.artical{
+				font-family: "Microsoft YaHei", "微软雅黑";
+			}
+			.artical h4{
+				font-size: 1.2em;
+	
+			}
+			.artical b{
+				font-size: 1em;
+				color: #adadad;
+				display: inline-block;
+				margin-top: 0.25em;
+				margin-bottom: 0.5em;
+				font-weight: normal;
+			}
+			.artical span{
+				margin-left: 2em;
+				color:#adadad;
+			}
+			.artical_sum img{
+				padding:1em 0;
+				width:100%;
+			}
+			.artical p{
+				font-size: 0.9em;
+			}
+			.artical_sum .col-lg-11 ,.col-md-11,.col-sm-11{
+				text-align: left;
+				font-family: "Microsoft YaHei", "微软雅黑";
+			}
+			.artical_sum b,span{
+				color:#adadad;
+				font-weight: normal;
+			}
+			.artical_sum span{
+				margin-left: 1em;
+			}
+			.artical_sum .col-lg-1 ,.col-md-1,.col-sm-1{
+				/*border:1px solid red;*/
+				text-align: right;
+			}
+			.wechar img{
+				width:2.6em;
+			}
+	
+			.wechar1 img{
+				width: 10em;
+				margin-top: -4.9em;
+				margin-left: -41%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row artical_sum">
+				<div class="col-lg-11 col-md-11 col-sm-11">
+					<h4 id="title"></h4>
+					<b id="author"></b> <span id="gmtPublish"></span>
+					<img src="" alt="" id="images" >
+					<p id="body"></p>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var accessToken,gwInfoId;
+			
+			$(document).ready(function() {
+				gwInfoId = getQueryString("id");
+				if(isEmpty(gwInfoId)){
+					alert('数据出现错误,请返回重试');
+					window.location.href = LOCAL_PATH + '/website/information.html';
+				}
+				
+				login.anonymousLogin();
+				accessToken = login.getWechatCookie("access_anonymous_token");
+	
+				getDate(gwInfoId);
+			});
+		
+			//查询数据
+			function getDate(gwInfoId){
+				_log('查询资讯数据:{access_token:' + accessToken + ",id:" + gwInfoId + "}");
+					
+				$.ajax({ type: "POST",//请求方式，get或post
+					url: GW_INFO_SELECT,
+					data: 'access_token=' + accessToken + "&id=" + gwInfoId,
+					dataType:'json',
+					timeout : 10000,
+					error: function(XmlHttpRequest,textStatus,errorThrown){
+						_log('查询资讯数据失败:' + errorThrown);
+						alert('系统繁忙,请稍后再试');
+					},
+					success: function(data){
+						_log('查询资讯数据返回数据:' +JSON.stringify(data));
+						var code = data.code;
+						if(code == 0){
+				  		 	//$("#detils").setTemplateElement("detils_jt").processTemplate(data.data);
+				  		 	var reslut = data.data;
+							$('#title').html(reslut.title);
+							$('#body').html(reslut.body);
+							$('#images').attr("src", reslut.images);
+							$("#author").html("文/" + reslut.author);
+							$("#gmtPublish").html(reslut.gmtPublish);
+							document.title = reslut.title;
+						}else{
+							alert(data.message);
+						}
+					},
+			　　		complete : function(XMLHttpRequest,status){
+			　　　　		if(status=='timeout'){
+			　　　　			alert('访问超时,请稍后再试');
+			　　　　		}
+			　　		}
+				});
+			}
+		</script>
+	</body>
+</html>

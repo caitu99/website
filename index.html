@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>财途积分钱包</title>
+	<link rel="stylesheet" type="text/css" href="app/css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="app/css/about_team.css">
+	<link rel="stylesheet" type="text/css" href="app/css/public.css">
+	<link href="app/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="app/images/header_img.ico" />
+	<link rel="bookmark" href="app/images/header_img.ico" type="image/x-icon"　/>   
+	<script src="app/js/jquery-1.11.3.min.js"></script>
+	<script src="app/js/bootstrap.min.js"></script>
+	<script>
+	
+		var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+		var browser = navigator.userAgent.toLowerCase(); 
+		var isMobile = false; 
+		for (var i=0; i<mobileAgent.length; i++){ 
+			if ( browser.indexOf(mobileAgent[i])!=-1 ){ 
+				isMobile = true; 
+				//alert(mobileAgent[i]); 
+				location.href = 'app/app/index.html';
+				break; 
+			} 
+		} 
+
+	</script>
+</head>
+<body>
+	<div class="header_img" id="tab_bar">
+		<div class="header_left">
+			<img src="app/images/tubiao.png" alt=""/><span>财途</span>
+		</div>
+		<ul>
+			<li id="tab1"><a href="index.html" class="current">首页</a></li>
+			<li id="tab2"><a href="dt.html" class="tab_left">公司动态</a></li>
+			<li id="tab3"><a href="information.html" class="tab_left">财途资讯</a></li>
+			<li id="tab4"><a href="about.html">关于我们</a></li>
+		</ul>
+		<div class="header_btn">
+			<div class="header_right" style="display:none;">
+				<img src="app/images/iconfont-pingguo.png" alt="" class="input_img"/><input type="button" value="测试版" class="input_bt"/>
+			</div>
+			<div class="header_right" id="btn_test1" style="cursor: pointer" >
+				<img src="app/images/iconfont-pingguo.png" alt=""/><img src="app/images/iconfont-anzhuo.png" alt=""/><span>正式版</span>
+			</div>
+			<div id="btn_img1"   style="display: none" >
+				<img src="app/images/zhengshiban.png" alt="">
+				<img src="app/images/erweima.png" alt="" class="two"/>
+			</div>
+
+		</div>
+	</div>
+	
+	<div id="fullpage">
+		<div class="section" id="section0">
+	    <div class="slide" id="slide1">
+			<div id="slide1-content-box">
+				<div class="img_content">
+					<img src="app/images/guanwang.png" alt="">
+					<div id="slide1-tip1-hot"></div>
+					<div id="slide1-tip2-hot"></div>
+				</div>
+				<div id="slide1-caption-text">
+					<p>中国电信宣布与财途积分钱包</p>
+					<p>签署长期战略合作协议</p>
+				</div>
+			</div>
+		</div>
+	    <div class="slide" id="slide2">
+			<div id="slide2-content-box">
+				<h3><img src="app/images/tubiao.png" alt=""/>财途积分钱包</h3>
+					<p>国内最大通用积分平台</p>
+					<p>实现各种积分互通，越转越值钱</p>
+			</div>
+		</div>
+		
+		</div>
+		<div class="section" id="section1">
+			<div id="fen">
+				<div class="integral_left">
+					<h3>积分管理</h3>
+					<p>集中管理各种积分，价值金额一目了然</p>
+					<p>到期积分，自动提醒，不再浪费一分钱</p>
+					<ul>
+						<li><a href="javascript:"><img src="app/images/card.png" alt=""/></a></li>
+						<li><a href="javascript:"><img src="app/images/gouwu.png" alt=""/></a></li>
+						<li><a href="javascript:"><img src="app/images/fly.png" alt=""/></a></li>
+					</ul>
+				</div>
+				<div class="integral_right">
+					<img src="app/images/left.png" alt=""/>
+					<img src="app/images/juxing2.png" alt="" class="right_middle"/>
+					<img src="app/images/right.png" alt="" class="right_img"/>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<!--智能查询-->
+			<div class="query">
+				<div class="query_left">
+					<h3>智能查询</h3>
+					<p>一键操作，省心省力</p>
+					<h4>自动发现帐户，解决遗忘烦恼</h4>
+					<ul>
+						<li><a href="javascript:"><img src="app/images/zidong.png" alt=""/></a></li>
+						<li class="col_left"><img src="app/images/xian.png" alt=""/></li>
+						<li><a href="javascript:"><img src="app/images/shoudong.png" alt=""/></a></li>
+					</ul>
+				</div>
+				<div class="query_right">
+					<img src="app/images/tianjia.png" alt=""/>
+					<img src="app/images/juxing.png" alt="" class="right_tag"/>
+					<img src="app/images/guanlizhanghu.png" alt="" class="right_img"/>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<!--安全放心-->
+			<div  class="secure" style="margin: 0">
+				<div class="secure_left">
+					<h3>安全放心</h3>
+					<p>中国银联框架合作企业</p>
+					<h4>阳光保险集团承保，网银级别多重加密技术</h4>
+					<ul>
+						<li><a href="javascript:"><img src="app/images/yangguangbaoxian.png" alt=""/></a></li>
+						<li class="col_left"><img src="app/images/xian.png" alt=""/></li>
+						<li><a href="javascript:"><img src="app/images/yinlianhezuo.png" alt=""/></a></li>
+						<li class="col_right"><img src="app/images/xian.png" alt=""/></li>
+						<li><a href="javascript:"><img src="app/images/wangyinjiami.png" alt=""/></a></li>
+					</ul>
+				</div>
+				<div class="secure_right">
+					<img src="app/images/yinlian.png" alt=""/>
+					<img src="app/images/juxing3.png" alt="" class="right_middle"/>
+					<img src="app/images/duochong.png" alt="" class="right_img"/>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section4">
+			<!--坐享优惠-->
+			<div  class="discount">
+				<div class="discount_left">
+					<h3>坐享优惠</h3>
+					<p>专注吃喝玩乐，服务应有尽有</p>
+					<ul>
+						<li><a href="javascript:"><img src="app/images/youhui.png" alt=""/></a></li>
+						<li class="col_left"><img src="app/images/xian.png" alt=""/></li>
+						<li><a href="javascript:"><img src="app/images/vip.png" alt=""/></a></li>
+					</ul>
+				</div>
+				<div class="discount_right">
+					<img src="app/images/caifenshenghuo.png" alt=""/>
+					<img src="app/images/juxing4.png" alt="" class="right_middle"/>
+					<img src="app/images/shanpinxiangqing.png" alt="" class="right_img"/>
+				</div>
+			</div>
+		</div>
+
+	<div style="clear:both"></div>
+	<div class="discount_sum">
+		<div class="discount_top">
+			<ul>
+				<li class="img_left"><img src="app/images/iphone_05.png" alt=""/></li>
+				<li><img src="app/images/iphone_04.png" alt=""/></li>
+				<li><img src="app/images/iphone_03.png" alt=""/></li>
+				<li><img src="app/images/iphone_01.png" alt=""/></li>
+				<!--<li><img src="app/images/iphone_02.png" alt=""/></li>-->
+			</ul>
+		</div>
+		<div class="discount_bottom">
+			<div class="bottom_a">
+				<a  id="bottom_code">
+					<img src="app/images/tubiao2.png" alt=""/>
+					<span>关注 <br/>微信公众号</span>
+					<div id="img_btn" style="display:none" >
+						<img src="app/images/left_erweima.png" alt="" class="left_erwei"  >
+					</div>
+				</a>
+				<a  id="bottom_code2">
+					<img src="app/images/tubiao1.png" alt=""/>
+					<span>关注 <br/>官方微博</span>
+					<div id="img_btn1"   style="display: none" >
+						<img src="app/images/weibo.png" alt="" class="right_erwei1">
+					</div>
+				</a>
+				<a   id="bottom_code3">
+					<img src="app/images/tubiao0.png" alt=""/>
+					<span>关注 <br/>QQ VIP群</span>
+					<div id="img_btn2"  style="display: none" >
+						<img src="app/images/right_erweima.png" alt="" class="left_qie">
+					</div>
+				</a>
+			</div>
+			<p>杭州未时网络技术有限公司   版权所有2015浙ICP-s3345667788</p>
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript" src="app/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="app/js/jquery.fullPage.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#2abae9', '#2abae9', '#51de97', '#f1c749', '#f066a7','#202a34'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', 'lastPage'],
+				//menu: '#menu',
+				scrollingSpeed: 500,
+				fitToSection: false,
+				navigation:true,
+				navigationPosition:'right',
+				slidesNavigation : true,
+				onLeave : function( link, index){
+					if(index == 5 ) {
+						$.fn.fullpage.setAutoScrolling(false);
+						$('.discount_sum').show();
+					}else {
+						$.fn.fullpage.setAutoScrolling(true);
+						$('.discount_sum').hide();
+					}
+				},
+				afterLoad : function( link, index){
+					//alert(111)
+					if( (index == 1) || (index >= 5) ){
+						$('#fp-nav').hide();
+					} else {
+						$('#fp-nav').show();
+					}
+
+				}
+
+			});
+			setInterval(function(){
+				$.fn.fullpage.moveSlideRight();
+			}, 5000);
+
+			
+			
+			$("#btn_test1").hover(function(){
+				$("#btn_img1").toggle();
+			})
+			$("#bottom_code").hover(function(){
+				$("#img_btn").toggle();
+			})
+			$("#bottom_code2").hover(function(){
+				$("#img_btn1").toggle();
+			})
+			$("#bottom_code3").hover(function(){
+				$("#img_btn2").toggle();
+			})
+			$("#download").hover(function(){
+				$("#load_img").toggle();
+			})
+
+			$("#slide1-tip1-hot").hover(function(){
+				$("#slide1-caption-text").html("<p>热烈庆祝财途积分生活获得中<br>国银联框架合作协议</p>");
+			})
+			$("#slide1-tip2-hot").hover(function(){
+				$("#slide1-caption-text").html("<p>中国电信宣布与财途积分生活<br>签署长期战略合作协议</p>");
+			})
+		});
+	</script>
+</body>
+</html>

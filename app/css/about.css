@@ -1,0 +1,117 @@
+
+
+
+#section0  .fp-tableCell{ padding:0; background:url(../images/banner_07.jpg)  no-repeat center; background-size:120% auto;  }
+
+#section0 #dt-download-btn{
+    position: absolute;
+    top:70%;
+    left:50%;
+	margin-left:-127px;
+    font-size: 3em;
+    border-radius: 0.3em ;
+    border:1px solid #fff;
+    background: none;
+    padding:0.2em 1em;
+    color:#fff;
+    font-family: Microsoft YaHei;
+}
+
+
+
+.weishi > img,
+.team > img,
+.contact > img { max-width:1920px; width:100%; height:auto; margin-top: -9em;}
+
+
+
+
+
+#load_img img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 1;
+    margin-left: -113px;
+    margin-top: -160px;
+}
+
+
+#btn_img1 {
+    position: absolute;
+    top: 4.8em;
+    right: 2em;
+    z-index: 80;
+}
+
+#btn_img1 p {
+    position: absolute;
+    top: 4.7em;
+    left: 2em;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+#btn_img1 h3 {
+    position: absolute;
+    top: 5.9em;
+    left: 2em;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+#btn_img1 .two {
+    position: absolute;
+    top: 2.56em;
+    left: 1.6em;
+    width: 10.2em;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1366px){
+    .weishi > img,
+    .team > img,
+    .contact > img { max-width:1920px; width:100%; height:auto; margin-top: -3em;}
+    .contact > img { max-width:1920px; width:100%; height:auto; margin-top: -3em;}
+	#section0 #dt-download-btn { font-size:2em; margin-left:-85px; }
+	
+  #cut  li img{ width:70%; height:auto; }
+  .bg_top ul li { padding:20px 0; }
+  
+.bg_top.moveDown{
+-webkit-transform: translate3d(0, 151px, 0);
+-ms-transform: translate3d(0, 151px, 0);
+transform: translate3d(0, 151px, 0);
+}
+.bg_top.moveUp{
+
+-webkit-transform: translate3d(0, 0, 0);
+ -ms-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
+}
+
+  
+#load_img img { top:54%; }
+    .bg_top ul {
+        margin-bottom: 0;
+        background: #04b6fe;
+        width: 69em;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+@media screen and (min-width:1367px){
+
+
+#section0  .fp-tableCell{ padding:0; background:url(../images/banner_07.jpg) center no-repeat; background-size: auto 100%;  }
+
+}
+

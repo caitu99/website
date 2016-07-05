@@ -1,0 +1,87 @@
+@import "../../styles/reset.css";
+.header{
+    width:100%;
+    max-width: 640px;
+    background:#fff;
+    margin: 0 auto;
+    /*border:1px solid red;*/
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+}
+.header a img{
+    width:3em;
+    position: absolute;
+    left:5%;
+    top:3em;
+}
+.header img{
+    width:6em;
+}
+.header p{
+    width:100%;
+    text-align: center;
+    font-size:1.42em;
+    padding-top: 1em;
+}
+.header h4{
+    width:100%;
+    text-align: center;
+    font-size:1.2em;
+    color:#d1d1d1;
+}
+.box{
+    background-color: #fff;
+    /*border: 1px solid red;*/
+    padding-bottom: 10em;
+    max-width: 640px;
+    overflow: hidden;
+    height:46.5em;
+}
+.content{
+    width:100%;
+    max-width: 640px;
+    background:#fff;
+    text-align: center;
+    /*border:1px solid red;*/
+    padding:0.5em;
+    margin-top: 1em;
+
+}
+.content .content_left{
+    width:30%;
+}
+.content .content_left img{
+    width:10em;
+    text-align: left;
+    /*border:1px solid red;*/
+   padding:1em;
+    clear: both;
+}
+.content_right{
+    text-align: left;
+    /*border: 1px solid red;*/
+    float: right;
+    width: 63%;
+    position: relative;
+    top: -9.5em;
+    padding-right: 0.5em;
+
+}
+.content_right h1{
+    font-size: 1.5em;
+    color: #393939;
+    padding-top: 0.5em;
+}
+.content_right p{
+    padding: 0.3em 0;
+    font-size:1em;
+    color:#666;
+}
+.footer{
+    width:100%;
+    max-width: 640px;
+    background:#fff;
+    border:1px solid red;
+
+}

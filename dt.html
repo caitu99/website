@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>财途积分钱包</title>
+	
+	<link rel="stylesheet" type="text/css" href="app/css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="app/css/public.css">
+	<link rel="stylesheet" type="text/css" href="app/css/dt.css">
+	<link href="app/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="app/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="app/images/header_img.ico" />
+	<link rel="bookmark" href="app/images/header_img.ico" type="image/x-icon"　/>
+	<script src="app/js/jquery-1.11.3.min.js"></script>
+	<script src="app/js/bootstrap.min.js"></script>
+	<script>
+	
+		var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+		var browser = navigator.userAgent.toLowerCase(); 
+		var isMobile = false; 
+		for (var i=0; i<mobileAgent.length; i++){ 
+			if ( browser.indexOf(mobileAgent[i])!=-1 ){ 
+				isMobile = true; 
+				//alert(mobileAgent[i]); 
+				location.href = 'app/app/index.html';
+				break; 
+			} 
+		} 
+
+	</script>
+</head>
+<body>
+	<div class="header_img" id="tab_bar">
+		<div class="header_left">
+			<img src="app/images/tubiao.png" alt=""/><span>财途</span>
+		</div>
+		<ul>
+			<li id="tab1"><a href="index.html">首页</a></li>
+			<li id="tab2"><a href="dt.html" class="current tab_left">公司动态</a></li>
+			<li id="tab3"><a href="information.html">财途资讯</a></li>
+			<li id="tab4"><a href="about.html">关于我们</a></li>
+		</ul>
+		<div class="header_btn">
+			<div class="header_right" style="display:none;">
+				<img src="app/images/iconfont-pingguo.png" alt="" class="input_img"/><input type="button" value="测试版" class="input_bt"/>
+			</div>
+			<div class="header_right" id="btn_test1" style="cursor: pointer" >
+				<img src="app/images/iconfont-pingguo.png" alt=""/><img src="app/images/iconfont-anzhuo.png" alt=""/><span>正式版</span>
+			</div>
+			<div id="btn_img1"  style="display: none" >
+				<img src="app/images/zhengshiban.png" alt="">
+				<img src="app/images/erweima.png" alt="" class="two"/>
+			</div>
+		</div>
+	</div>
+	<div id="fullpage">
+			
+		
+		<div class="moveDown section" id="section0">
+			<input id="dt-download-btn" type="button" value="下载体验"/>
+			<div id="load_img" style="display: none">
+				<img src="app/images/top_img.png" alt="">
+			</div>
+		<div  id="cut" class="bg_top">
+			<ul id="label">
+				<li class="active">
+					<img src="app/images/dashiji2.png" alt="" class="img1"/>
+					<div class="five_box"></div>
+				</li>
+				<li>
+					<img src="app/images/dashiji.png" alt=""  class="img2"/>
+					<div class="five_box"></div>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div class="moveDown section" id="section1">
+			<div id="label_con">
+				<div id="timeline-box" class="switch-content">
+					<ul class="ul_img" >
+						<li>
+							<img id="dt-timeline" src="app/images/dongtai.png" alt="" >
+						</li>
+					</ul>
+				</div>
+				<div  id="news-list" class="switch-content" style="display:none; ">
+				<ul class="ul_img">
+					<li>
+						<div class="dynamic2">
+							<div class="news-item-body">
+								<div class="news-item-timing">
+									<span class="timing-top">12</span>
+									<span>2015</span>
+								</div>
+								<div class="news-item-content">
+									<span>财途积分生活与翼集分签署战略合作协议</span>
+									<img src="app/images/hezuo.jpg" alt="">
+									<h3>12月17日，财途积分生活与翼集分在上海总部签订了长期战略合作协议。双方就积分管理及积分互换等方面达成一致意见，2016年初，翼集分可在财途积分生活APP内进行管理
+										和互换，此次合作对中国的通用积分发展，起到了里程碑的影响。针对本次双方签订的长期战略合作协议，实际上是财途积分生活与翼集分进入深层次的交流与合作，财途积分
+										生活在原有的业务模式基础上，再添加一员。至此，财途积分生活APP的积分管理功能再上新的台阶。财途积分生活是一款专注积分的工具型APP，帮助老百姓管理及整合信用卡
+										、航空、通讯、商家等积分，并实现积分通兑，积分价值最大化。财途积分生活CEO陈勇文表示：“在中国平均每个人都有6种以上的积分卡，积分是资产，但无法有效管理和使
+										用，常常出现过期清零导致资产浪费，财途积分生活的诞生就是为了帮广大老百姓管理好这些零散的资产，我们很高兴能与翼集分携手并肩，为老百姓提供更多更好的服务。”
+										今后，双方还将充分发挥各自优势，为推动及改变中国的积分行业做出自己的贡献。 </h3>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="dynamic2">
+							<div class="news-item-body">
+								<div class="news-item-timing">
+									<span class="timing-top">09</span>
+									<span>2015</span>
+								</div>
+								<div class="news-item-content">
+									<span>财途积分生活与阳光保险集团达成战略合作</span>
+									
+									<img src="app/images/yidong.jpg" alt="">
+									<h3> 2015年9月7日,财途积分生活和阳光保险集团签署了战略合作协议。按此协议,双方将在账户信息安全，资金安全，财产保险以及金融创新等方面,开展多层次、多领域的战略合作。
+										财途积分生活是一款实现积分集中管理及变现的APP，可将信用卡积分集中管理，并致力于将各种积分适用于生活的各个角落。 阳光保险集团股份有限公司是中国500强企业、中国
+										服务业100强企业。该公司成立于2005年7月,是主要经营财产保险业务的全国性保险公司。目前,已有36家分公司开业运营,三四级分支机构1000余家,服务网络实现全国覆盖,累计为
+										3600多万客户提供了保险保障,累计赔款288亿元。阳光保险集团表示,阳光保险一直密切关注和支持财途积分生活的发展。今后,将充分发挥金融保险集团的优势,在金融创新、互联
+										网金融、小微金融等方面,为财途积分生活提供更多支持。</h3>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript" src="app/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="app/js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="app/js/jquery.bxslider.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['white', 'white',],
+				//anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				//menu: '#menu',
+				fitToSection: false,
+				scrollingSpeed: 500,
+				//afterLoad:afterLoad,
+				'onLeave': function(index, nextIndex, direction){
+					if (index == 1 && direction == 'down'){
+						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+					}
+					else if(index == 2 && direction == 'up'){
+						$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+					}
+
+					$('#cut').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 2 && direction == 'up'));
+					$('#cut').toggleClass('moveDown', nextIndex == 2);
+					$('#cut').toggleClass('moveUp', index == 2 && direction == 'up');
+					
+					
+					
+					if(index == 1 ) {
+						$.fn.fullpage.setAutoScrolling(false);
+						$('.header_img').css('background','rgb(51, 51, 51)');
+					}else {
+						$.fn.fullpage.setAutoScrolling(true);
+						$('.header_img').css('background','rgba(51, 51, 51, .7)');
+						
+					}
+					
+					
+				}
+			});
+			
+			var $li = $('#label li');
+			var $ul = $('#label_con .switch-content');
+			$li.click(function(){
+				var $this = $(this);
+				var $t = $this.index();
+				$li.removeClass();
+				$this.addClass('active');
+				$ul.css('display','none');
+				$ul.eq($t).css('display','block');
+			});
+			
+			slidera = $('#news-list .ul_img').bxSlider({
+				//slideWidth: 900,
+				//slideMargin: 10,
+				prevText : ' ',
+				nextText : ' ',
+				startSlide : 0,
+				onSliderLoad : function(){
+					$('#news-list .ul_img').css({
+						'width': '415%',
+						'position': 'relative',
+						'transition-duration' : '0s',
+						'transform': 'translate3d(-940px, 0px, 0px)'
+					});
+				},
+			});
+
+			$("#btn_test1").hover(function(){
+				$("#btn_img1").toggle();
+			})
+			$("#dt-download-btn").hover(function(){
+				$("#load_img").toggle();
+			})
+			
+		});
+		</script>
+	</body>
+</html>

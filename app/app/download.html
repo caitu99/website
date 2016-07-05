@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>财途积分生活</title>
+<meta name="keywords" content="积分生活, ifen, caitu99, caitu" />
+<meta name="description" content="财途积分生活，尽享每一分" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!-- Mobile Devices Support @begin -->
+<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="pragma">
+<meta content="0" http-equiv="expires">
+<meta content="telephone=no, address=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- apple devices fullscreen -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<!-- Mobile Devices Support @end -->
+
+</head>
+<body>
+<a style="font-size:18px;"></a>
+</body>
+
+<script type="text/javascript">
+	/**  
+	浏览器版本信息
+	* @type {Object} 
+	* @return {Boolean}  返回布尔值     
+	*/
+	function browser() {
+	    var u = navigator.userAgent.toLowerCase();
+	    var app = navigator.appVersion.toLowerCase();
+	    return {
+	        txt: u, // 浏览器版本信息
+	        version: (u.match(/.+(?:rv|it|ra|ie)[\/: ]([\d.]+)/) || [])[1], // 版本号       
+	        msie: /msie/.test(u) && !/opera/.test(u), // IE内核
+	        mozilla: /mozilla/.test(u) && !/(compatible|webkit)/.test(u), // 火狐浏览器
+	        safari: /safari/.test(u) && !/chrome/.test(u), //是否为safair
+	        chrome: /chrome/.test(u), //是否为chrome
+	        opera: /opera/.test(u), //是否为oprea
+	        presto: u.indexOf('presto/') > -1, //opera内核
+	        webKit: u.indexOf('applewebkit/') > -1, //苹果、谷歌内核
+	        gecko: u.indexOf('gecko/') > -1 && u.indexOf('khtml') == -1, //火狐内核
+	        mobile: !!u.match(/applewebkit.*mobile.*/), //是否为移动终端
+	        ios: !!u.match(/\(i[^;]+;( u;)? cpu.+mac os x/), //ios终端
+	        android: u.indexOf('android') > -1, //android终端
+	        iPhone: u.indexOf('iphone') > -1, //是否为iPhone
+	        iPad: u.indexOf('ipad') > -1, //是否iPad
+            weChat: u.indexOf('micromessenger') > -1, // 是否是通过微信的扫一扫打开的
+	        webApp: !!u.match(/applewebkit.*mobile.*/) && u.indexOf('safari/') == -1 //是否web应该程序，没有头部与底部
+	    };
+	}
+	var timeout;
+	function open_appstore() {
+		var b=browser();
+		if(b.ios||b.iPhone||b.iPad){
+		    //window.location="https://itunes.apple.com/cn/app/dou-dou-you/id379405145?mt=8";
+		    window.location="https://itunes.apple.com/us/app/cai-tu-ji-fen-sheng-huo/id1022795281?l=zh&ls=1&mt=8";
+			//window.location="itms-apps://itunes.apple.com/cn/app/qq-2011/id444934666?mt=8";
+		}else if(b.android){
+			// 
+		}
+		else{alert('功能开发中');}
+	} 
+	function try_to_open_app() {
+		var b=browser();
+		if(b.weChat){
+			var aTag=document.getElementsByTagName("a");
+			aTag[0].innerHTML="请点击右上角按钮，选择浏览器打开下载";//需为字符串
+			//window.location="https://www.caitu99.com/app/"; 
+		}
+		else{
+			if(b.ios||b.iPhone||b.iPad){
+				// 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+				// 否则打开a标签的href链接
+				var ifr = document.createElement('iframe');
+				ifr.src = 'ifen://';
+				ifr.style.display = 'none';
+				document.body.appendChild(ifr);
+				window.setTimeout(function(){
+					document.body.removeChild(ifr);
+				},3000)
+				//window.location="ifen://";
+			}else if(b.android){
+				window.location="../download/app-caitu-release.apk";
+			}
+		}
+		
+		timeout = setTimeout('open_appstore()', 300);
+	}
+	
+	function download() {
+		try_to_open_app();
+	}
+	download();
+	</script>
+</html>

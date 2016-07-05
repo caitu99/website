@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>财途积分钱包</title>
+		<link rel="stylesheet" type="text/css" href="app/css/jquery.fullPage.css">
+		<link rel="stylesheet" type="text/css" href="app/css/public.css">
+		<link rel="stylesheet" type="text/css" href="app/css/dt.css">
+		<link href="app/css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="app/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="app/css/information.css">
+		<link rel="shortcut icon" href="app/images/header_img.ico" />
+		<link rel="bookmark" href="app/images/header_img.ico" type="image/x-icon"　/>
+		<script src="app/js/jquery-1.11.3.min.js"></script>
+		<script src="app/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="app/js/url.js"></script>
+		<script type="text/javascript" src="app/js/login.js"></script>
+		<script type="text/javascript" src="app/js/jTemplates/jquery-jtemplates.js"></script>
+		
+		<script>
+			var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+			var browser = navigator.userAgent.toLowerCase(); 
+			var isMobile = false; 
+			for (var i=0; i<mobileAgent.length; i++){ 
+				if ( browser.indexOf(mobileAgent[i])!=-1 ){ 
+					isMobile = true; 
+					//alert(mobileAgent[i]); 
+					location.href = 'app/app/index.html';
+					break; 
+				} 
+			} 
+		</script>
+	</head>
+	<body>
+		<p style="display:none">
+	 		<textarea id="menuList" rows="0" cols="0">
+	 			<!--
+					<li id="new" class="left_first" onclick="clicktest(0)">
+						<a href="#" class="current">最新文章</a>
+					</li>
+					
+					{#foreach $T as list}
+						<li id="menu_title_{$T.list.id}" onclick="clicktest({$T.list.id})">
+							<a href="#">{$T.list.name}</a>
+						</li>
+					{#/for}
+				 -->
+			</textarea>
+		</p>
+	
+		<p style="display:none">
+	 		<textarea id="contentList" rows="0" cols="0">
+	 			<!--
+					{#foreach $T.datas as list}
+						<li>
+							<div class="row margin_top">
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<a href="informatiom_detils.html?id={$T.list.id}">
+										<div class="img" style="background-image:url({$T.list.images});width:230px;height:110px;">
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-8 col-md-8 col-sm-8">
+									<div class="text_list">
+										<a href="informatiom_detils.html?id={$T.list.id}" >
+											<h4>{$T.list.title}</h4>
+										</a>
+										<b>文/{$T.list.author}</b> 
+										<span>{$T.list.gmtPublish}</span>
+										<p>{$T.list.digest}</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					{#/for}
+				 -->
+			</textarea>
+		</p>
+	
+		<div class="header_img" id="tab_bar">
+			<div class="header_left">
+				<img src="app/images/tubiao.png" alt=""/><span>财途</span>
+			</div>
+			<ul>
+				<li id="tab1"><a href="index.html">首页</a></li>
+				<li id="tab2"><a href="dt.html" class="tab_left">公司动态</a></li>
+				<li id="tab3"><a href="information.html"  class="current">财途资讯</a></li>
+				<li id="tab4"><a href="about.html">关于我们</a></li>
+			</ul>
+			<div class="header_btn">
+				<div class="header_right" style="display:none;">
+					<img src="app/images/iconfont-pingguo.png" alt="" class="input_img"/>
+					<input type="button" value="测试版" class="input_bt"/>
+				</div>
+				<div class="header_right" id="btn_test1" style="cursor: pointer" >
+					<img src="app/images/iconfont-pingguo.png" alt=""/>
+					<img src="app/images/iconfont-anzhuo.png" alt=""/><span>正式版</span>
+				</div>
+				<div id="btn_img1"  style="display: none" >
+					<img src="app/images/zhengshiban.png" alt="">
+					<img src="app/images/erweima.png" alt="" class="two"/>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row" >
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<ul id="menu">
+						
+					</ul>
+				</div>
+			</div>
+			<ul id="content" style="margin-left: -2.8em;margin-bottom: -15px;    position: relative;
+    top: -1.8em;">
+				
+			</ul>
+		</div>
+		
+		<script type="text/javascript" src="app/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="app/js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="app/js/jquery.bxslider.js"></script>
+		
+		<script>
+			//注册每个选卡的单击事件
+			function registerClick(){
+				$("#menu li a").each(function(index) { //带参数遍历各个选项卡
+					$(this).click(function() { //注册每个选卡的单击事件
+						$("#menu li a.current").removeClass("current"); //移除已选中的样式
+						$(this).addClass("current"); //增加当前选中项的样式
+						//显示选项卡对应的内容并隐藏未被选中的内容
+						$("#content li:eq(" + index + ")").show()
+								.siblings().hide();//#menu与#content在html层没有嵌套关联，但因为其ul序列相同，用index值可以巧妙的将两者关联。
+					});
+				});
+			}
+			
+			$(".wechar").hover(function(){
+				$(".wechar1").toggle();
+			})
+	
+			$(document).ready(function() {
+				var $li = $('#label li');
+				var $ul = $('#label_con .switch-content');
+				$li.click(function(){
+					var $this = $(this);
+					var $t = $this.index();
+					$li.removeClass();
+					$this.addClass('active');
+					$ul.css('display','none');
+					$ul.eq($t).css('display','block');
+				});
+				
+				slidera = $('#news-list .ul_img').bxSlider({
+					//slideWidth: 900,
+					//slideMargin: 10,
+					prevText : ' ',
+					nextText : ' ',
+					startSlide : 0,
+					onSliderLoad : function(){
+						$('#news-list .ul_img').css({
+							'width': '415%',
+							'position': 'relative',
+							'transition-duration' : '0s',
+							'transform': 'translate3d(-940px, 0px, 0px)'
+						});
+					},
+				});
+	
+				$("#btn_test1").hover(function(){
+					$("#btn_img1").toggle();
+				})
+				$("#dt-download-btn").hover(function(){
+					$("#load_img").toggle();
+				})
+			});
+			
+			function clicktest(key){
+				//alert(key);
+				//alert(map.get(key));
+				//var  value=map.get(key);
+				//$("#"+value).show();
+				
+				selectPageList(1,key);
+			}
+			
+			var map= getMap();
+			map.put("new","details");
+	
+			function getMap(){//初始化map_，给map_对象增加方法，使map_像个Map
+	    		var map_=new Object();
+	    		//属性加个特殊字符，以区别方法名，统一加下划线_
+			    map_.put=function(key,value){    map_[key]=value;}
+			    map_.get=function(key){    return map_[key];}
+			    map_.remove=function(key){    delete map_[key];}
+			    map_.keyset=function(){
+		        	var ret="";
+		        	for(var p in map_){
+		            	if(typeof p =='string' && p.substring(p.length-1)=="_"){
+		                	ret+=",";
+		                	ret+=p;
+		            	}
+		        	}
+		        	if(ret==""){
+		            	return ret.split(","); //empty array
+		        	}else{
+		            	return ret.substring(1).split(",");
+		        	}
+		    	}
+	    		return map_;
+			}
+		</script>
+		
+		<script type="text/javascript">
+			var accessToken;
+			var pageSize = 1000;
+		
+			$(document).ready(function() {
+				login.anonymousLogin();
+				accessToken = login.getWechatCookie("access_anonymous_token");
+
+				selectClassify();
+				selectPageList(1,0);
+			});
+			
+			//获取官网资讯分类列表
+			function selectClassify(){
+				_log('获取官网资讯分类列表:{access_token:' + accessToken + "}");
+				
+				$.ajax({ type: "POST",//请求方式，get或post
+					url: GW_INFO_CLASSIFY_LIST,
+					data: 'access_token=' + accessToken,
+					dataType:'json',
+					timeout : 10000,
+					error: function(XmlHttpRequest,textStatus,errorThrown){
+						_log('获取分类列表失败:' + errorThrown);
+						alert('系统繁忙,请稍后再试');
+					},
+					success: function(data){
+						_log('获取分类列表返回数据:' +JSON.stringify(data));
+						var code = data.code;
+						if(code == 0){
+							var list = data.data;
+				  		 	$("#menu").setTemplateElement("menuList").processTemplate(list);
+				  		 	
+				  		 	for(var i=0;i<list.length;i++){
+				  				map.put("menu_title_" + (list[i].id),"details" + (list[i].id));
+				  		 	}
+				  		 	
+				  		 	registerClick();
+						}else{
+							alert(data.message);
+						}
+					},
+			　　		complete : function(XMLHttpRequest,status){
+			　　　　		if(status=='timeout'){
+			　　　　			alert('访问超时,请稍后再试');
+			　　　　		}
+			　　		}
+				});
+			}
+			
+			//获取官网资讯列表
+			function selectPageList(curPage,classId){
+				_log('获取官网资讯列表:{access_token:' + accessToken + ",classId:" + classId + "}");
+				
+				var param = 'access_token=' + accessToken + "&curPage=" + curPage + "&pageSize=" + pageSize;
+				
+				if(classId != 0){
+					param = param + "&classId=" + classId;
+				}
+				
+				$.ajax({ type: "POST",//请求方式，get或post
+					url: GW_INFO_LIST,
+					data: param,
+					dataType:'json',
+					timeout : 10000,
+					error: function(XmlHttpRequest,textStatus,errorThrown){
+						_log('获取官网资讯列表失败:' + errorThrown);
+						alert('系统繁忙,请稍后再试');
+					},
+					success: function(data){
+						_log('获取官网资讯列表返回数据:' +JSON.stringify(data.data));
+						var code = data.code;
+						if(code == 0){
+							var list = data.data;
+				  		 	$("#content").setTemplateElement("contentList").processTemplate(list);
+						}else{
+							alert(data.message);
+						}
+					},
+			　　		complete : function(XMLHttpRequest,status){
+			　　　　		if(status=='timeout'){
+			　　　　			alert('访问超时,请稍后再试');
+			　　　　		}
+			　　		}
+				});
+			}
+		</script>
+	</body>
+</html>

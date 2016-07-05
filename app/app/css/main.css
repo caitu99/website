@@ -1,0 +1,405 @@
+@charset "utf-8";
+/*  
+* @description:账户中心
+* @author:dhp
+* @update:
+*/
+
+/* 收支明细 */
+.list-purse-inout{}
+.list-purse-inout li{
+	border-bottom:1px solid #ddd;
+	background:#fff;
+	color:#555;
+}
+.list-purse-inout .order{
+	display:block;
+	padding:0.5em 1em;
+	background:#f9f9f9;
+	border-bottom:1px solid #eee;
+}
+.list-purse-inout .order em{
+	color:#999;
+	font-weight:normal;
+}
+.list-purse-inout .pay{
+	display:block;
+	clear:both;
+	overflow:hidden;
+	padding:0.5em 1em 0;
+}
+.list-purse-inout .pay .left{
+	float:left;
+}
+.list-purse-inout .pay .right{
+	float:right;
+	color:#999;
+	font-weight:normal;
+	padding:0;
+}
+.list-purse-inout .balance {
+	display:block;
+	clear:both;
+	overflow:hidden;
+	padding:0.5em 1em;
+}
+.list-purse-inout .balance .left{
+	float:left;
+}
+.list-purse-inout .balance .right{
+	float:right;
+	padding:0;
+}
+
+/* 未开通支付密码 */
+.purse-noopen{
+	padding:1em;
+	border-bottom:1px solid #E3E3E3;
+}
+.purse-noopen .balance{
+	padding-bottom:1em;
+	font-size:1.5em;
+}
+.purse-noopen .btn{
+	color:#fff;
+}
+.purse-help{
+	padding:0.5em 1em;
+}
+.purse-help h3{
+	font-size:1.2em;
+	line-height:1.8em;
+}
+.purse-help ul{}
+.purse-help ul li{
+	line-height:1.8em;
+}
+
+/* 我的银行卡 */
+.list-purse-backcard{line-height: 34px;}
+.list-purse-backcard li{
+	border-bottom:1px solid #ddd;
+	background:#f9f9f9;
+	color:#555;
+}
+.list-purse-backcard li .card{
+	display:block;
+	padding:0.5em 1em;
+	background:#f0f0f0;
+	overflow:hidden;
+	
+}
+.list-purse-backcard li .card strong,
+.list-purse-backcard li .operate strong{
+	float:left;
+	cursor:pointer;
+
+}
+.list-purse-backcard li .card em,
+.list-purse-backcard li .operate em{
+	float:right;
+	color:#555;
+}
+.list-purse-backcard li .operate{
+	display:block;
+	padding:0.5em 1em;
+	overflow:hidden;
+}
+
+
+
+
+
+/* 付款信息 */
+.pay-info{
+	padding:1em;
+	border-bottom:1px solid #ddd;
+}
+.pay-info ul li{
+	line-height:2em;
+}
+.pay-info ul li em{
+	font-weight:bold;
+	color:#cc0000;
+}
+.titlebar{
+	padding:0.5em;
+	background:#eee;
+}
+.pay-form .more{
+	display:block;
+	padding:1em;
+	border:1px dashed #ccc;
+	background:#fff;
+	text-align:center;
+}
+.pay-form .more:hover,
+.pay-form .more:active{
+	border:1px dashed #cc0000;
+	color:#cc0000;
+}
+
+
+/* 滑动门与表单 */
+.slidebars .nav.nav-tabs{
+	border-bottom: 3px solid #ddd;
+}
+.slidebars .nav.nav-tabs li{
+	width:50%;
+}
+.slidebars .nav-tabs>li {
+	float: left;
+	margin-bottom: -3px;
+}
+.slidebars .nav-tabs>li.active>a,
+.slidebars .nav-tabs>li.active>a:hover,
+.slidebars .nav-tabs>li.active>a:focus {
+	color: #555;
+	cursor: default;
+	background-color:transparent;
+	border: none;
+	border-bottom:3px solid #cc0000;
+}
+
+
+
+
+/* 二阶段 样式  */
+/* 添加银行卡  */
+.bankcard-list{}
+.bankcard-list .title{
+	padding:1em;
+	background:#f5f5f5;
+	font-size:14px;
+	color:#ccc;
+}
+.bankcard-list .info{
+	width:100%;
+	padding:0 1em;
+	background:#fff;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+.bankcard-list .info .form-group{
+	padding:0.5em 0;
+	border-bottom:1px solid #ddd;
+	font-size:14px;
+	color:#666;
+}
+.bankcard-list .form-group{
+	overflow:hidden;
+}
+.bankcard-list .info .form-group:last-child {
+	border-bottom: 0;
+}
+.bankcard-list input{
+	border:0;
+}
+.bankcard-list .info .form-group .info-pic {
+	width: 1.8em;
+	height: 1.8em;
+}
+.bankcard-list .info .form-group .info-pic img {
+	width: 100%;
+}
+.bankcard-list .mt{
+	margin-top:1em;
+}
+.bankcard-list [type="submit"]{
+	width:90%;
+	margin:1em auto 0;
+}
+.bankcard-list .info .info-mob{
+	padding:1em 0 0;
+	font-weight:400;
+	font-size:14px;
+}
+
+.bankcard-list .form-group select{
+	width: 100%;
+	-webkit-appearance: none;
+	appearance: none;
+	border:none;
+	padding: 0;
+	text-indent: 0;
+
+}
+/* 滑出层  */
+.bankcard-info {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.bankcard-info ul li{
+	width:100%;
+	padding:1em;
+	border-bottom:1px solid #ddd;
+	font-size:16px;
+}
+.bankcard-info ul li.active {
+	background: #ddd;
+}
+/* 滑出层 end */
+/* 弹出提示层  */
+.remind-box{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: rgba(0,0,0,.6);
+	z-index:9;
+}
+.remind{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:80%;
+	height:12em;
+	margin:7em auto 0;
+	padding:1em;
+	background:rgba(0,0,0,.8);
+	border-radius:3px;
+	color:#fff;
+}
+.remind h4 {
+	font-size: 16px;
+}
+.remind h4 span{
+	width:2em;
+	height:2em;
+	background:#666;
+	border-radius:3px;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	line-height:2em;
+}
+.remind p{
+	margin-top:1em;
+	line-height:20px;
+	font-size:14px;
+}
+/* 弹出提示层 end */
+
+/* 添加银行卡  end*/
+
+/* 提现 页面  */
+#step1{
+	position:relative;
+	left:0;
+	top:0;	
+}
+#step2{
+	position:absolute;
+	left:-100%;
+	top:0;
+}
+.withdraw-cash{}
+.withdraw-cash a{
+	display:block;
+}
+.withdraw-cash .info{
+	padding:0.5em 1em;
+	background:#fff;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	overflow:hidden;
+}
+.withdraw-cash .info h4{
+	padding:0.5em 0;
+	font-size:14px;
+}
+.withdraw-cash input{
+	padding-left:5px;
+}
+.withdraw-cash .pd{
+	padding:0 1em;
+}
+.paypassword{}
+.paypassword .text-center{
+	margin:1em;
+	padding-bottom:0.5em;
+	border-bottom:1px solid #ccc;
+}
+.paypassword .form-group {
+	margin: 0 1em;
+}
+.withdraw-cash .pull-right{
+	width:1.5em;
+	height:1.5em;
+	padding-top: 0.3em;
+}
+.withdraw-cash .pull-right img {
+	width: 100%;
+}
+/* 提现 页面  end*/
+
+/* 选择银行卡  */
+.bankcard-change{
+	width:100%;
+	margin:1em auto 0;
+	background:#fff;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	overflow:hidden;
+}
+.bankcard-change li{
+	margin:1em;
+	padding-bottom:1em;
+	border-bottom:1px solid #ddd;
+	overflow:hidden;
+}
+.bankcard-change li a{
+	display:block;
+}
+.bankcard-change li:last-child{
+	border-bottom:0;
+}
+.bankcard-change .icon{
+	width:2em;
+	height:2em;
+	margin-top:0.5em;
+	background:url(../img/gou.png) no-repeat center center;
+	background-size:100%;
+}
+.bankcard-changebtn{
+	padding:1em;
+}
+.bankcard-changebtn button{
+	padding:1em;
+	font-weight:bold;
+}
+/* 选择银行卡 end  */
+
+/* 收支明细 样式  */
+.withdraw-list-title{
+	width:100%;
+	background:#fff;
+	border-bottom:1px solid #ddd;
+	overflow:hidden;
+}
+.withdraw-list-title li{
+	float:left;
+	display:inline;
+	width:50%;
+	padding:1em;
+}
+.withdraw-list-title li:first-child{
+	border-right:1px solid #ddd;
+}
+.withdraw-list-title li span{
+	display:block;
+}
+
+.table{table-layout: fixed; border-collapse: collapse;width:100%;background:#fff;}
+.table tbody tr {border-bottom:1px solid #dedede;border-top:1px solid #dedede;}
+.table tbody tr td {padding:1em;}
+
+.table-account-details{font-size:14px;}
+.table-account-details tbody tr td:first-child{text-align:left;'}
+.table-account-details tbody tr td:last-child{text-align:right;}
+
+/* 收支明细 样式 end  */
+/* 二阶段 样式 end */ 

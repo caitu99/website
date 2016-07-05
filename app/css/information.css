@@ -1,0 +1,389 @@
+@media screen and (max-width:1920px){
+    .container{
+        width:60%;
+        /*border:1px solid red;*/
+
+        overflow: hidden;
+    }
+    .row{
+        margin-top:8em;
+    }
+    .col-lg-12 ,.col-md-12,.col-sm-12{
+        text-align: center;
+    }
+    .col-lg-12 ul{
+        overflow: hidden;
+        border-bottom: 1px solid #ebebeb;
+        padding: 0.6em 0;
+    }
+    .col-lg-12 ul .left_first{
+        margin-left: 0em;
+    }
+    .col-lg-12 ul li{
+        float:left;
+        /*border:1px solid red;*/
+        /*padding:0.5em;*/
+        margin-left: 2em;
+
+
+    }
+    .col-lg-12 ul li a{
+        text-decoration: none;
+    }
+    .col-lg-12 ul li .current{
+        color:#ec3e01;
+        border-bottom:2px solid #ec3e01;
+        padding:0.5em 0.5em;
+        /*text-decoration: none;*/
+    }
+    .col-lg-12 ul li a{
+        font-size: 1.2em;
+        color:#333;
+        font-family: "Microsoft YaHei", "微软雅黑";
+    }
+
+    .margin_top{
+        margin:1em 0;
+       border-top:1px solid #ebebeb;
+        padding-top:1em;
+    }
+    .col-lg-3 ,.col-md-3,.col-sm-3{
+        text-align: center;
+        /*border:1px solid red;*/
+    }
+    .img{
+        width:15em;
+        height:9em;
+        /*border:1px solid red;*/
+        background-image: url(../../app/images/zuxun1.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .col-lg-8 ,.col-md-8,.col-sm-8{
+        text-align: left;
+        /*border:1px solid blue;*/
+    }
+    .text_list{
+        font-family: "Microsoft YaHei", "微软雅黑";
+        line-height: 1.25em;
+        padding-top:20px;
+        /*margin-left: -3em;*/
+    }.text_list h4{
+         font-size: 1.2em;
+
+     }
+    .text_list b{
+        font-size: 1em;
+        color: #adadad;
+        display: inline-block;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
+        font-weight: normal;
+    }
+    .text_list span{
+        margin-left: 2em;
+        color:#adadad;
+    }
+    .text_list p{
+        font-size: 0.9em;
+    }
+    .artical{
+        font-family: "Microsoft YaHei", "微软雅黑";
+    }
+    .artical h4{
+        font-size: 1.2em;
+
+    }
+    .artical b{
+        font-size: 1em;
+        color: #adadad;
+        display: inline-block;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
+        font-weight: normal;
+    }
+    .artical span{
+        margin-left: 2em;
+        color:#adadad;
+    }
+    .artical_sum img{
+        padding:1em 0;
+        width:100%;
+    }
+    .artical p{
+        font-size: 0.9em;
+    }
+    .artical_sum .col-lg-11 ,.col-md-11,.col-sm-11{
+        text-align: left;
+        font-family: "Microsoft YaHei", "微软雅黑";
+    }
+    .artical_sum b,span{
+        color:#adadad;
+        font-weight: normal;
+    }
+    .artical_sum span{
+        margin-left: 1em;
+    }
+    .artical_sum .col-lg-1 ,.col-md-1,.col-sm-1{
+        /*border:1px solid red;*/
+        text-align: right;
+    }
+    .wechar img{
+        width:2.6em;
+    }
+
+    .wechar1 img{
+        width: 10em;
+        margin-top: -4.9em;
+        margin-left: -41%;
+    }
+
+}
+
+
+@media screen and (max-width:1600px){
+    .container{
+        width:60%;
+        /*border:1px solid red;*/
+
+        overflow: hidden;
+    }
+    .row{
+        margin-top:8em;
+    }
+    .col-lg-12 ,.col-md-12,.col-sm-12{
+        text-align: center;
+    }
+    .col-lg-12 ul{
+        overflow: hidden;
+        border-bottom: 1px solid #ebebeb;
+        padding: 0.5em 0;
+    }
+    .col-lg-12 ul .left_first{
+        margin-left: 0em;
+    }
+    .col-lg-12 ul li{
+        float:left;
+        /*border:1px solid red;*/
+        /*padding:0.5em;*/
+        margin-left: 1em;
+
+
+    }
+    .col-lg-12 ul li a{
+        text-decoration: none;
+    }
+    .col-lg-12 ul li .current{
+        color:#ec3e01;
+        border-bottom:2px solid #ec3e01;
+        padding:0.5em 0.5em;
+        /*text-decoration: none;*/
+    }
+    .col-lg-12 ul li a{
+        font-size: 1em;
+        color:#333;
+        font-family: "Microsoft YaHei", "微软雅黑";
+    }
+
+    .margin_top{
+        margin-top:1em;
+    }
+    .col-lg-3 ,.col-md-3,.col-sm-3{
+        text-align: center;
+        /*border:1px solid red;*/
+    }
+    .img{
+        width:16em;
+        height:8em;
+        /*border:1px solid red;*/
+        background-image: url(../../app/images/zuxun1.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .col-lg-8 ,.col-md-8,.col-sm-8{
+        text-align: left;
+        /*border:1px solid blue;*/
+    }
+    .text_list{
+        font-family: "Microsoft YaHei", "微软雅黑";
+        line-height: 1.25em;
+        padding-top:10px;
+        padding-left:5em;
+    }.text_list h4{
+         font-size: 1em;
+
+     }
+    .text_list b{
+        font-size: 0.8em;
+        color: #adadad;
+        display: inline-block;;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
+        font-weight: normal;
+    }
+
+    .text_list p{
+        font-size: 0.8em;
+    }
+    .text_list span{
+        font-size: 0.8em;
+        color: #adadad;
+    }
+    .wechar img{
+        width:2.6em;
+    }
+
+    .wechar1 img{
+        width: 10em;
+        margin-top: -4.9em;
+        margin-left: -99%;
+    }
+}
+@media screen and (max-width:1366px){
+    .container{
+        width:60%;
+        /*border:1px solid red;*/
+
+        overflow: hidden;
+    }
+    .row{
+        margin-top:6em;
+    }
+    .col-lg-12 ,.col-md-12,.col-sm-12{
+        text-align: center;
+    }
+    .col-lg-12 ul{
+        overflow: hidden;
+        border-bottom: 1px solid #ebebeb;
+        padding: 0.5em 0;
+    }
+    .col-lg-12 ul .left_first{
+        margin-left: 0em;
+    }
+    .col-lg-12 ul li{
+        float:left;
+        /*border:1px solid red;*/
+        /*padding:0.5em;*/
+        margin-left: 2em;
+
+
+    }
+    .col-lg-12 ul li a{
+        text-decoration: none;
+    }
+    .col-lg-12 ul li .current{
+        color:#ec3e01;
+        border-bottom:2px solid #ec3e01;
+        padding:0.5em 0.5em;
+        /*text-decoration: none;*/
+    }
+    .col-lg-12 ul li a{
+        font-size: 1em;
+        color:#333;
+        font-family: "Microsoft YaHei", "微软雅黑";
+    }
+
+    .margin_top{
+        margin-top:1em;
+    }
+    .col-lg-3 ,.col-md-3,.col-sm-3{
+        text-align: center;
+        /*border:1px solid red;*/
+    }
+    .img{
+        width:16em;
+        height:8em;
+        /*border:1px solid red;*/
+        background-image: url(../../app/images/zuxun1.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .col-lg-8 ,.col-md-8,.col-sm-8{
+        text-align: left;
+        /*border:1px solid blue;*/
+    }
+    .text_list{
+        font-family: "Microsoft YaHei", "微软雅黑";
+        line-height: 1.25em;
+        padding-top:7px;
+        padding-left:8em;
+    }.text_list h4{
+         font-size: 1em;
+
+     }
+    .text_list b{
+        font-size: 0.8em;
+        color: #adadad;
+        display: inline-block;;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
+        font-weight: normal;
+    }
+
+    .text_list p{
+        font-size: 0.8em;
+    }
+    .text_list span{
+        font-size: 0.8em;
+        color: #adadad;
+    }
+    .artical{
+        font-family: "Microsoft YaHei", "微软雅黑";
+    }
+    .artical h4{
+        font-size: 1.2em;
+
+    }
+    .artical b{
+        font-size: 1em;
+        color: #adadad;
+        display: inline-block;
+        margin-top: 0.25em;
+        margin-bottom: 0.5em;
+        font-weight: normal;
+    }
+    .artical span{
+        margin-left: 2em;
+        color:#adadad;
+    }
+    .artical_sum img{
+        padding:1em 0;
+        width:100%;
+    }
+    .artical p{
+        font-size: 0.9em;
+    }
+    .artical_sum .col-lg-11 ,.col-md-11,.col-sm-11{
+        text-align: left;
+        font-family: "Microsoft YaHei", "微软雅黑";
+    }
+    .artical_sum p{
+        font-size: 0.8em;
+    }
+    .artical_sum b,span{
+        color:#adadad;
+        font-weight: normal;
+
+    }
+    .artical_sum span{
+        margin-left: 1em;
+    }
+    .artical_sum .col-lg-1 ,.col-md-1,.col-sm-1{
+        /*border:1px solid red;*/
+        text-align: right;
+    }
+    .wechar img{
+        width:2em;
+    }
+
+    .wechar1 img{
+        width: 8em;
+        margin-top: -4em;
+        margin-left: -107%;
+    }
+
+
+}
+
+
+

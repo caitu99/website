@@ -1,0 +1,102 @@
+@import "../../styles/reset.css";
+.header_text{
+    background: #fff;
+    overflow: hidden;
+}
+.header_text p{
+    width:100%;
+    text-align: center;
+    font-size:1.42em;
+    margin-top:2em;
+}
+.header_text h4{
+    width:100%;
+    text-align: center;
+    font-size:1.2em;
+    color:#d1d1d1;
+}
+.content{
+    width:100%;
+    max-width: 640px;
+    background:#fff;
+    text-align: center;
+    height:37.5em;
+    overflow: hidden;
+    /*border:1px solid red;*/
+}
+.content ul{
+    overflow: hidden;
+}
+.content ul li{
+    width: 50%;
+    float: left;
+    padding: 1em;
+
+}
+.content ul li img{
+    width:5em;
+}
+.content p{
+    width:100%;
+    text-align: center;
+    font-size:1.42em;
+    margin-top: 0.5em;
+}
+.content h4{
+    width:100%;
+    text-align: center;
+    font-size:1.2em;
+    color:#d1d1d1;
+}
+.content dl{
+    width:33%;
+    float:left;
+    /*border:1px solid red;*/
+    margin-top:5em;
+    margin-bottom: 5em;
+}
+.content dl dt img{
+    width:6em;
+}
+.footer{
+    width:100%;
+    max-width: 640px;
+    background:#1f2b34;
+    text-align: center;
+    margin: 0 auto;
+    height:23.75em;
+    overflow: hidden;
+}
+.footer_btn {
+    width:100%;
+    text-align: center;
+
+}
+.footer_btn input{
+    background:#05ade4;
+    color:#fff;
+    padding:0.5em 3.5em;
+    font-size: 1.82em;
+    border-radius: 1em;
+    margin-top:1.8em;
+
+}
+.footer_btn .test{
+    color:#fff;
+    padding:0.5em 2em;
+    border-radius: 5em;
+    background: #1bc670;
+    margin-bottom:2.3em;
+}
+.footer_btn .line{
+    max-width: 640px;
+    width:100%;
+    border-bottom:1px solid #858d92;
+    height:2em;
+    text-align: center;
+}
+.footer small{
+    display: inline-block;
+    color:#b5bdbd;
+    margin:0.5em 0;
+}
